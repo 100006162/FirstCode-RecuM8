@@ -1,136 +1,151 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
 
+/* Añadimos el link de Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
-
+/* Añadimos un estilo al selector universal */
 * {
     box-sizing: border-box;
 }
-
+/* Añadimos estilo al body */
 body {
     margin: 0;
 }
-/* Clear floats after the columns */
-
-header{
-background-image: url("../img/header.jpg");
-height: 100vh;
-padding: 130px;
-text-align: center;
-background-size:cover;
-background-repeat:no-repeat;
-background-position:center center;
+/* Añadimos estilo al encabezado */
+header {
+    background-image: url("../img/header.jpg");
+    height: 100vh;
+    padding: 130px;
+    text-align: center;
+    background-size:cover;
+    background-repeat:no-repeat;
+    background-position:center center;
 }
+/* Añadimos estilo a la primera fila */
 .contenedor{
-float: left;
-
+    float: left;
 }
+/* Añadimos contenido adicional a la fila */
 .row:after {
     content: "";
     display: table;
     clear: both;
 }
+/* Añadimos contenido adicional a la segunda fila */
 .row2:after {
     content: "";
     display: table;
     clear: both;
     padding-bottom: 25px;
 }
-
+/* Añadimos estilo de padding */
 .padding{
-padding-bottom: 25px;
+    padding-bottom: 25px;
 }
+/* Añadimos estilo al final de padding */
 .paddingbottom{
-padding-bottom: 100px;    
+    padding-bottom: 100px;    
 }
+/* Añadimos estilo a las columnas que se dividen en una */
 .column-2 {
     width: 100%;
     float: left;
     text-align: center;
     font-family: 'Poppins', sans-serif;  
 }
-
+/* Añadimos estilo a las columnas que se dividen en tres */
 .column-3 {
     width: 33.3%;
     float: left;
     text-align: center;
 }
-
+/* Añadimos estilo a las columnas que se dividen en dos */
 .column-4 {
     width: 50%;    
     float: left;
 }
-
+/* Añadimos estilo a las columnas para que esten a la izquierda */
 .column-5{
     float: left;
 }
+/* Añadimos estilo de padding a la izquierda */
 .padding-l {
     padding-left: 150px;
 }
+/* Añadimos estilo a los titulos */
 h1{
-font-size: 80px;
-font-family: 'Poppins', sans-serif;
+    font-size: 80px;
+    font-family: 'Poppins', sans-serif;
 }
+/* Añadimos estilo a los titulos */
 h2{
-font-size: 50px;  
-font-family: 'Poppins', sans-serif;  
+    font-size: 50px;  
+    font-family: 'Poppins', sans-serif;  
 }
+/* Añadimos estilo a los titulos */
 #h3{
-font-size: 40px;  
-font-family: 'Poppins', sans-serif; 
-color: white;    
+    font-size: 40px;  
+    font-family: 'Poppins', sans-serif; 
+    color: white;    
 }
+/* Añadimos estilo a los titulos */
 h3{
     font-size: 40px;  
     font-family: 'Poppins', sans-serif; 
- }
-.h4{
-font-size: 30px;
-color: white;
-font-family: 'Poppins', sans-serif; 
 }
-
+/* Añadimos estilo a los titulos */
+.h4{
+    font-size: 30px;
+    color: white;
+    font-family: 'Poppins', sans-serif; 
+}
+/* Añadimos estilo a los parrafos */
 p{
     font-size: 18px;
     font-family: 'Poppins', sans-serif; 
 }
+/* Añadimos color de fondo */
 #back{
-background-color: rgba(0, 143, 143, 0.767);
-
+    background-color: rgba(0, 143, 143, 0.767);
 }
+/* Añadimos estilo a las imagenes de github */
 .github{
-width: 70%;
-height: 70%;
+    width: 70%;
+    height: 70%;
 }
+/* Añadimos estilo al pie de pagina */
 footer{
     text-align: center; 
     background-color: black; 
     color: aliceblue;
     font-family: 'Poppins', sans-serif;  
 }
-
+/* Añadimos estilo al pie de pagina */
 #red{
-width: 50%;
-height: 153px;
-background-color: rgba(0, 0, 0, 0.342);
+    width: 50%;
+    height: 153px;
+    background-color: rgba(0, 0, 0, 0.342);
 }
+/* Añadimos estilo al pie de pagina */
 #blue{
-width: 30%;
-background-color: rgba(0, 0, 0, 0.342);
+    width: 30%;
+    background-color: rgba(0, 0, 0, 0.342);
 }
+/* Añadimos estilo al pie de pagina */
 #green{
-width: 20%;
-background-color: rgba(0, 0, 0, 0.342);
+    width: 20%;
+    background-color: rgba(0, 0, 0, 0.342);
 }
+/* Añadimos estilo al pie de pagina */
 .white{
-color: white;
+    color: white;
 }
-
+/* Empiezan las Media Query */
 @media only screen and (max-width: 600px) {
-    
     body {
-        margin: 0;
         width: 100%;
         height: 100%;
+    }
+    h1, h2 {
+        margin-top: 50%;
     }
     .column-2 {
         width: 100%;
@@ -140,23 +155,7 @@ color: white;
     }
     .contenedor{
         float: left;
-
-        }
-        .row:after {
-            content: "";
-            display: table;
-            flex-wrap: wrap;
-            clear: both;
-        }
-        .row2:after {
-            content: "";
-            display: table;
-            clear: both;
-            padding: 50px;
-            flex-wrap: wrap;
-            columns: 2;
-        }
-        
+    }    
     h1{
         font-size: 50px;
         font-family: 'Poppins', sans-serif;
@@ -166,8 +165,9 @@ color: white;
         font-family: 'Poppins', sans-serif;  
     }
     .github{
-        width: 100%;
-        height: 100%;
+        width: 70%;
+        height: 70%;
+        margin-left: 5%;
     }
     .column-3 {
         width: 50%;
@@ -188,13 +188,16 @@ color: white;
         width: 100%;
         height: 50px;
         background-color: rgba(0, 0, 0, 0.342);
-        }
-        #blue{
+    }
+    #blue{
         width: 50%;
         background-color: rgba(0, 0, 0, 0.342);
-        }
-        #green{
+    }
+    #green{
         width: 50%;
         background-color: rgba(0, 0, 0, 0.342);
-        }
+    }
+    iframe {
+        width: 570px;
+    }
 }
