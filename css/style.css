@@ -201,3 +201,5 @@ footer{
         width: 570px;
     }
 }
+
+/* content: ""; -- se utiliza para establecer el contenido vacío en un seudoelemento */
